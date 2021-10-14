@@ -6,7 +6,7 @@ import "./App.css";
 function App() {
   const [movies, setMovies] = useState([]);
 
-  async function fetchMoviesHandler() {
+  function fetchMoviesHandler() {
     fetch("https://swapi.dev/api/films/")
       .then((response) => {
         return response.json();
